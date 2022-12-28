@@ -40,7 +40,7 @@ function App() {
       {
         user ? <UserCard userData={user} /> : "Loading"
       }
-      <button onClick={handleClick} className="button"><img src={`/src/assets/flechas.png`} className="arrow"/></button>
+      <button onClick={handleClick} className="button"><img src={`./src/assets/flechas.png`} className="arrow"/></button>
     </div>
   )
 }
