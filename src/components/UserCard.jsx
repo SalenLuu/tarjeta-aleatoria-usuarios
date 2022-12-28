@@ -8,9 +8,9 @@ const UserCard = ({ userData }) => {
             <h2>{fullName}</h2>
             <img src={picture.large} alt="picture" className="pic" />
             <ul>
-                <li><img src={`/assets/email.svg`}  className="img" />{email}</li>
-                <li><img src={`/assets/phone.svg`} className="img" />{cell}</li>
-                <li><img src={`/assets/location.svg`} className="img" />{fullLocation}</li>
+                <li><img src={`src/assets/email.svg`}  className="img" />{email}</li>
+                <li><img src={`src/assets/phone.svg`} className="img" />{cell}</li>
+                <li><img src={`src/assets/location.svg`} className="img" />{fullLocation}</li>
             </ul>
         </div>
     )
