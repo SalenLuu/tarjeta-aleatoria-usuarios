@@ -1,3 +1,7 @@
+import emailIcon from "../assets/email.svg"
+import phoneIcon from "../assets/phone.svg"
+import locationlIcon from "../assets/location.svg"
+
 const UserCard = ({ userData }) => {
 
     const { name, location, email, cell, picture } = userData
@@ -8,9 +12,9 @@ const UserCard = ({ userData }) => {
             <h2>{fullName}</h2>
             <img src={picture.large} alt="picture" className="pic" />
             <ul>
-                <li><img src={`src/assets/email.svg`}  className="img" />{email}</li>
-                <li><img src={`src/assets/phone.svg`} className="img" />{cell}</li>
-                <li><img src={`src/assets/location.svg`} className="img" />{fullLocation}</li>
+                <li><img src={emailIcon}  className="img" />{email}</li>
+                <li><img src={phoneIcon} className="img" />{cell}</li>
+                <li><img src={locationlIcon} className="img" />{fullLocation}</li>
             </ul>
         </div>
     )
