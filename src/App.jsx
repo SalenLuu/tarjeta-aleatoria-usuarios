@@ -2,6 +2,7 @@ import './App.css'
 import UserCard from './components/UserCard'
 import { useEffect, useState } from 'react'
 import users from './data/users.json'
+import arrowIcon from "./assets/flechas.png"
 
 function App() {
 
@@ -40,7 +41,7 @@ function App() {
       {
         user ? <UserCard userData={user} /> : "Loading"
       }
-      <button onClick={handleClick} className="button"><img src={`./src/assets/flechas.png`} className="arrow"/></button>
+      <button onClick={handleClick} className="button"><img src={arrowIcon} className="arrow"/></button>
     </div>
   )
 }
